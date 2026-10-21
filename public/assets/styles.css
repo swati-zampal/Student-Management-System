@@ -269,3 +269,23 @@ footer { text-align: center; color: #9aa5b5; font-size: 11px; padding: 20px; }
     .panel { padding: 13px; }
     .login-card { padding: 26px; }
 }
+
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(15, 25, 45, 0.45);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    width: min(100%, 760px);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-content .panel { margin: 0; }
