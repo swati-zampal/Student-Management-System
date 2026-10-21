@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in | Student Portal</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="login-page">
+<main class="login-card">
+    <div class="brand-mark">SP</div>
+    <p class="eyebrow">STUDENT PORTAL</p>
+    <h1>Welcome back</h1>
+    <p class="muted">Sign in to manage students and training records.</p>
+
+    <form id="loginForm">
+        <label>
+            Email address
+            <input name="email" type="email" required
+                   autocomplete="username"
+                   placeholder="admin@example.com">
+        </label>
+
+        <label>
+            Password
+            <input name="password" type="password" required
+                   autocomplete="current-password"
+                   placeholder="Your password">
+        </label>
+
+        <button class="primary full" type="submit">Sign in</button>
+        <p id="loginError" class="error" role="alert"></p>
+    </form>
+
+    <p class="small muted">
+        Authorized staff only. Contact your administrator if you need access.
+    </p>
+</main>
+<script src="/assets/login.js" defer></script>
+</body>
+</html>
